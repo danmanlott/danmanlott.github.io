@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="css/bootstrap.min.css" rel="stylesheet media="screen">
-		<link href="css/font-awesome.min.css" rel="stylesheet media="screen">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:b" rel="stylesheet"> 		
 		</head>
 		<style type="text/css">
 		
@@ -12,8 +14,9 @@
 		.body{
 		height:100vh;
 		}
+		
+		
 	.header{
-	min-height: 90px;
 	background:#FF0000;
 	padding: 0px;
 	text-decoration: none;
@@ -21,15 +24,36 @@
 	}
 	
 	.footer{
-	min-height: 60px;
+	padding:0px;
 	background:#00FFFF;
 	height:10vh;
+	vertical-align:middle;
 	}
-	.col-xs-8{
-		height:80vh;
+	.col-md-8{
+		height:100vh;
 		background-image: url("images/me.jpg");
 		background-size: cover;
-		overflow-y:hidden;
+		background-repeat: no-repeat;
+		background-position: center top;
+		
+	}
+	
+	.col-md-4{
+		height:100vh;
+		font-family:'Open Sans', sans-serif;
+		background-color:#999999;
+	}
+	.col-xs-2{
+		font-family:'Open Sans', sans-serif;
+		color:#202020;
+	}
+	
+	p{
+	
+	}
+	.align-bottom{
+	text-align: center;
+	vertical-align:bottom;
 	}
 	.fa{
 	padding:10px;
@@ -38,28 +62,28 @@
 	width: 40px;
 	text-align: center;
 	text-decoration: none;
-	
 	margin: 5px 2px;
 	border-radius: 50%;
+	background:#FF0000
 	}
 	.fa:hover{
 	color:white;
 	opacity: 0.7;
 	}
-	.fa-{
-	background:;
-	color:white;
-	}
 	.fa-github{
 	background:#333;
 	color:white;
 	}
-	.fa-linkedin{
+	.fa-linkedin-square{
 	background:#007bb5;
 	color:white;
 	}
-	.fa-envelope-o{
-	background:#0000FF;
+	.fa-envelope-square{
+	background:#333380;
+	color:white;
+	}
+	.fa-file-text{
+	background:#b93333;
 	color:white;
 	}
 		</style>
@@ -68,34 +92,52 @@
 			<div class="container-fluid">
 
 
-				<div class = "row header">
-					<div class = "col-xs-12 text-center">
-						<h4>Header</h4>
-						<a href="https://www.linkedin.com/in/danlottfl" type="button" class="btn-floating btn-large btn-li"><i class="fa fa-linkedin"></i></a>
-						<a href="https://www.github.com/danmanlott" type="button" class="btn-floating btn-large btn-git"><i class="fa fa-github"></i></a>
-						<a href="mailto:danieljosephlott@gmail.com" type="button" class="btn-floating btn-large btn-envelope-o"><i class="fa fa-envelope-o"></i></a>
-					</div>
-				</div>
+				
 
 
 				<div class = "row">
-					<div class = "col-xs-8">
+					<div class = "col-md-8">
 						
 					</div>
-					<div class = "col-xs-4">
-						<h1>Right side</h1>
-						<p></p>
+					<div class = "col-md-4">
+					
+						<div class = "row">
+							<div class = "col-xs-2">
+							<h4>Who</h4>
+							<br><br><br>
+							<h4>What</h4>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<h4>Where</h4>
+							</div>
+							<div class = "col-xs-10">
+							<h4>Dan Lott</h4>
+							<br><br><br>
+							<h4>a Software Developer</h4>
+							<br>
+							<h4>Developing in C/C++, C#, and Java</h4>
+							<br>
+							<h4>Basing Data in SQL and MongoDB</h4>
+							<br>
+							<h4>Marking up in HTML, CSS, JavaScript</h4>
+							<br><br><br>
+							<h4>Graduated with a Computer Science BS from the University of Central Florida in Orlando, Florida</h4>
+							<br><br><br>
+							</div>
+						
+						</div>
+						<div class = "align-bottom">
+						<a href="https://www.linkedin.com/in/danlottfl" type="button" class="btn-floating btn-large"><i class="fa fa-linkedin-square"></i></a>
+						<a href="https://www.github.com/danmanlott" type="button" class="btn-floating btn-large"><i class="fa fa-github"></i></a>
+						<a href="mailto:danieljosephlott@gmail.com" type="button" class="btn-floating btn-large"><i class="fa fa-envelope-square"></i></a>
+						<a href="files/resume.pdf" type="button" class="btn-floating btn-large"><i class="fa fa-file-text"></i></a>
+						</div>
 					</div>
 				</div>
 
 				
 
 
-				<div class = "row footer">
-					<div class = "col-xs-12 text-center">
-						<h4>Footer</h4>
-					</div>
-				</div>
+	
 
 			</div>
 		</body>
